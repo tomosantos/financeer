@@ -3,11 +3,8 @@ Flask
 Flask-Session
 pytz
 requests
-werkzeug.security
+werkzeug
 pandas
-json
 plotly
-plotly.express
 pandas_datareader
 yfinance
-datetime
