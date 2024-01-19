@@ -1,0 +1,14 @@
+os
+cs50
+Flask
+Flask-Session
+pytz
+requests
+werkzeug.security
+pandas
+json
+plotly
+plotly.express
+pandas_datareader
+yfinance
+datetime

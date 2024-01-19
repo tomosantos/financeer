@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %} Graphics {% endblock %}
+
+
+{% block main %}
+
+<div class="row p-4">
+    {% for stock in stocks %}
+        <div class="card mb-4 m-auto" style="width: 90%;" data-aos="fade-right">
+            <div class="card-body">
+                <div id="chart{{ loop.index }}"></div>
+                <p class="card-text text-center">
+                    <b>Stock:</b> {{ stock.symbol }}
+                </p>
+                <p class="card-text text-center">
+                    <b>Shares:</b> {{ stock.shares }}
+                </p>
+                <p class="card-text text-center">
+                    <b>Purchase Price:</b> {{ stock.price }}
+                </p>
+                <p class="card-text text-center">
+                    <b>Total:</b> {{ stock.total }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- plotly CDN -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+     {% for graphJSON in graphsJSON %}
+        var graph{{ loop.index }} = {{ graphJSON | safe }};
+        Plotly.plot("chart{{ loop.index }}", graph{{ loop.index }}, {});
+    {% endfor %}
+</script>
+
+{% endblock %}

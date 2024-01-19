@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %} Deposit {% endblock %}
+
+{% block main %}
+    <!-- Deposit Form -->
+    <form action="/deposit" method="post" class="text-center" data-aos="fade-left">
+        <!-- Desposit -->
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" autocomplete="off" autofocus name="deposit" placeholder="Deposit" min="1" type="number">
+        </div>
+        <!-- Deposit -->
+        <div class="text-center mb-3">
+            <button class="btn btn-primary" type="submit">Deposit</button>
+        </div>
+        <!-- Validation -->
+        <p id="validation" class="mb-3 text-center small fw-light text-muted">{{ message }}</p>
+    </form>
+
+{% endblock %}

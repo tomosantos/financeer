@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %} Buy {% endblock %}
+
+{% block main %}
+    <!-- Buy Form -->
+    <form action="/buy" method="post" class="text-center" data-aos="fade-right">
+        <!-- Symbol -->
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <!-- Shares -->
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="shares" placeholder="Shares" type="number">
+        </div>
+        <!-- Buy -->
+        <div class="text-center mb-3">
+            <button class="btn btn-primary" type="submit">Buy</button>
+        </div>
+        <!-- Validation -->
+        <p id="validation" class="mb-3 text-center small fw-light text-muted">{{ message }}</p>
+    </form>
+
+{% endblock %}

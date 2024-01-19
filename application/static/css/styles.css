@@ -1,0 +1,99 @@
+* {
+    font-style: var(--black);
+}
+
+:root {
+    --red: #F50E3B;
+    --redhover: #E59015;
+    --black: #141402;
+    --white: 245, 245, 245;
+    --maintransition: all 0.3s linear;
+}
+
+/* Size for brand */
+nav .navbar-brand {
+    font-size: xxx-large;
+    font-weight: 1000;
+}
+
+/* custom fonts */
+nav .navbar-brand .bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* links */
+a {
+    color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:active {
+    color: var(--redhover) !important;
+    transition: var(--maintransition) !important;
+}
+
+/* Off white background */
+.form, .active {
+    background-color: rgba(var(--white), 0.85)!important;
+    border-radius: 0.25rem;
+    border: 0!important;
+}
+
+
+/* BUTTON / SUBMIT */
+/* On hover and active */
+button,
+button:hover,
+button:active,
+.field span,
+.field span:hover,
+.field span:active,
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:active{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* red button (default) */
+button,
+button:hover,
+button:active,
+.field span,
+.field span:hover,
+.field span:active,
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color: var(--red) !important;
+}
+
+/* Input fields (hover/focus) */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+.card:hover,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+input[type="color"]:focus,
+select,
+select:hover,
+select:active {
+    border-color: rgba(20, 20, 2, 0.1);
+    box-shadow: 0 1px 1px rgba(20, 20, 2, 0.075) inset, 0 0 8px rgba(20, 20, 2, 0.2);
+    outline: none;
+    transition: var(--maintransition);
+}
