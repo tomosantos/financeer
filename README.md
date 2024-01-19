@@ -36,7 +36,7 @@ $ python run.py
 
 ## Login / Register page:
 
-![Login page](/.application/static/img/login.png)
+![Login page](./application/static/img/login.png)
 ![Register page](./application/static/img/register.png)
 
 Users have to create an account prior to using this application. Validation is implemented both in front end and back end. Users have to provide a name, a minimum of four-alphanumeric-characters username that will be used to identify which user has logged in, and a password. The password in the database is hashed first, bur for safety measures.
