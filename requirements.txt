@@ -1,4 +1,3 @@
-os
 cs50
 Flask
 Flask-Session
